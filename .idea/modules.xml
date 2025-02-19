@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JDBC-Hibernate-JPA/JDBC-Hibernate-JPA.iml" filepath="$PROJECT_DIR$/JDBC-Hibernate-JPA/JDBC-Hibernate-JPA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-Spring-Boot.iml" filepath="$PROJECT_DIR$/Java-Spring-Boot.iml" />
+    </modules>
+  </component>
+</project>
