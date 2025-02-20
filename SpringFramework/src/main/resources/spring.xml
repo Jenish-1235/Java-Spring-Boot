@@ -1,0 +1,21 @@
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    Declare all the required objects bean by bean-->
+<!--    If we need multiple objects of same class we will need to add it as bean with different id multiple times. -->
+<!--    for wiring within objects we use ref attribute in property instead of value and pass the value of id of desired bean.-->
+<!--    Singleton creates the single object of any bean in container while scope prototype can create multiple objects of single bean -->
+    <bean id="alien" class="com.java.Alien">
+<!--        example of setter injection-->
+           <property name="age" value="20"/>
+        <property name="ufo" ref="ufo"/>
+    </bean>
+
+    <bean id="ufo" class="com.java.UFO" scope="prototype">
+        <property name="color" value="red"/>
+    </bean>
+
+
+</beans>
