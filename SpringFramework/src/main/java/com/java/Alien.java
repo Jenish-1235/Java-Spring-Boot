@@ -7,6 +7,9 @@ public class Alien {
 
     public Alien() {}
 
+    // in constructor injection we use parameterised constructor and use constructor-arg type in config xml file and it follows sequence of variables declared in parameter.
+    // or else we can use type parameter or we can use index or name attribute to specify mmore clearly. to use name attribute we use @constructorproperties annotation to inject using name attribute.
+
     public Alien(int age, String name) {
         this.age = age;
         this.name = name;
