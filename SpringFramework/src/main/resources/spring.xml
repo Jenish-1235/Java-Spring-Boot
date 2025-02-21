@@ -17,5 +17,24 @@
         <property name="color" value="red"/>
     </bean>
 
+<!--
+
+We will be using interfaces to create dependency free code , more closely following the SOLID principles.
+
+autowire attribute can be used with bean declaration to apply the automatic wiring with the existing beans of required type in config.
+it can be done byType or byName
+
+we use primary attribute to declare the primary bean to which autowiring will apply if found clashing beans.
+
+we use lazy-init attribute to the bean declaration to lazily create the bean when required , while it still works in singleton scope, but is initialised lazily rather than
+context creation.
+
+we can getBean by type rather than name by declaring the required beans class type in getbean function invocation.
+
+bean can be created inside the property tag for any other specific bean which only that bean can access and use and is known as inner bean.
+
+
+
+-->
 
 </beans>
